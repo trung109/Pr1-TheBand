@@ -47,4 +47,13 @@
     .search-icon {
         display: none;
     }
+
+    .band .mobile-member {
+        width: 100%;
+        margin-left: 8px;
+    }
+    
+    .s-col-full {
+        width: 100%;
+    }
 }

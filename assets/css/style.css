@@ -18,6 +18,10 @@ html {
     text-decoration: none;
 }
 
+.mt-16 {
+    margin-top: 16px;
+}
+
 .col {
     float: left;
     padding-left: 8px;
@@ -284,11 +288,6 @@ nav.header {
     margin-top: 32px;
 }
 
-.tour .place {
-    width: calc(100% /3);
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
 
 .place .place-img {
     width: 100%;
