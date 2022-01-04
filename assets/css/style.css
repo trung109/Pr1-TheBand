@@ -331,6 +331,7 @@ nav.header {
     font-size: 15px;
     border: none;
     font-weight: 500;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
