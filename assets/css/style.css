@@ -457,6 +457,16 @@ nav.header {
     display: inline-block;
 }
 
+.contact-info a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
 .contact-form .form-control {
     padding: 10px;
     border: 1px solid #ccc;

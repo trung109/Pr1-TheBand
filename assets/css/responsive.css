@@ -3,14 +3,41 @@
     .mobile-menu {
         display: none;
     }
-
+    
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .mobile-menu {
         display: none;
     }
+    
+}
 
+@media screen and (max-width: 1023px) {
+    .btn {
+        padding: 15px 16px;
+    }
+    .contact-form .form-control {
+        padding: 15px;
+    }
+
+    .contact-content p {
+        line-height: 2;
+    }
+
+    .social-list a {
+        font-size: 48px;
+        margin: 0 18px;
+    }
+    .copyright {
+        display: inline-block;
+        margin-top: 20px;
+
+    }
+
+    .copyright a {
+        padding: 15px 0;
+    }
 }
 
 @media screen and (max-width: 767px) {
