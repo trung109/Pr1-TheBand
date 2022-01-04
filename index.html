@@ -2,15 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="view-port" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Band</title>
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
         <link rel="stylesheet" href="./assets/icons/themify-icons/themify-icons.css">
-        <nav class="header">
+        <nav id="nav-header" class="header">
             <ul id="nav-bar">
-                <li><a href="#">Home</a></li>
+                <li style="display: inline-block;"><a href="#">Home</a></li>
                 <li><a href="#band">Band</a></li>
-                <li><a href="#tour">Tour</a></li>
+                <li><a id="tour-a" href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="#" title="More">
@@ -26,6 +27,9 @@
             </ul>
             <div class="search-icon" href="#">
                 <i class="ti-search"></i>
+            </div>
+            <div id="nav-mobile-menu" class="mobile-menu">
+                <i class="menu-icon ti-menu"></i>
             </div>
         </nav>
 
@@ -200,5 +204,26 @@
         modalContainer.addEventListener('click', (event) => {
             event.stopPropagation()
         })
+
+        const header = document.getElementById('nav-header')
+        const menu = document.getElementById('nav-mobile-menu')
+        const headerHeight = header.clientHeight
+
+        menu.onclick = () => {
+            let isClosed = header.clientHeight === headerHeight
+            if (isClosed) {
+                header.style.height = 'auto'
+            } else {
+                header.style.height = `${headerHeight}px`
+            }
+        }
+        const menuItems = document.querySelectorAll('#nav-bar li a[href*="#"]')
+        for (let i = 0; i < menuItems.length; i++) {
+            let menuItem = menuItems[i]
+            menuItem.onclick = () => {
+                header.style.height = `${headerHeight}px`
+            }
+        }
+        
     </script>
 </html>

@@ -1,0 +1,33 @@
+
+@media screen and (min-width: 1024px) {
+    .mobile-menu {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .mobile-menu {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    #nav-bar,
+    #nav-bar li,
+    #nav-bar li a {
+        
+        display: block;
+    }
+
+    .mobile-menu {
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .search-icon {
+        display: none;
+    }
+}

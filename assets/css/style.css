@@ -55,6 +55,7 @@ nav.header {
     left: 0;
     right: 0;
     z-index: 10;
+    overflow: hidden;
 }
 
 #nav-bar {
@@ -116,6 +117,7 @@ nav.header {
     font-size: 12px;
 }
 
+.mobile-menu,
 .search-icon {
     background-color: black;
     font-size: 14px;
@@ -130,6 +132,11 @@ nav.header {
 .search-icon:hover {
     background-color: #f00;
     display: block;
+}
+
+.mobile-menu:hover {
+    background-color: #ccc;
+    color: #000;
 }
 
 .slider {
@@ -164,7 +171,8 @@ nav.header {
     max-width: 100%;
     margin: auto;
     text-align: center;
-    padding: 64px 0;
+    padding: 64px 16px;
+    
 }
 
 .band .band-heading {
@@ -517,16 +525,4 @@ footer .social-list a:hover {
         opacity: 1;
         transform: translateY(0px);
     }
-}
-
-@media (min-width: 1024px) {
-    
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    
-}
-
-@media (max-width: 767px) {
-    
 }
