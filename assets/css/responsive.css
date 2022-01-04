@@ -17,10 +17,27 @@
     #nav-bar,
     #nav-bar li,
     #nav-bar li a {
-        
         display: block;
     }
 
+    #nav-bar li a {
+        padding: 2 24px;
+    }
+
+    nav.header {
+        overflow: hidden;
+        
+    }
+   
+    #nav-bar .sub-nav {
+        position: initial;
+    }
+    #nav-bar .sub-nav a {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        width: 100%;
+        padding: 5px 41px;
+    }
     .mobile-menu {
         float: right;
         position: absolute;

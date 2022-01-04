@@ -55,7 +55,7 @@ nav.header {
     left: 0;
     right: 0;
     z-index: 10;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #nav-bar {
@@ -95,6 +95,7 @@ nav.header {
     position: absolute;
     top: 100%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: #fff;
 }
 
 #nav-bar li:hover .sub-nav {

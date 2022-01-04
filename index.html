@@ -214,14 +214,23 @@
             if (isClosed) {
                 header.style.height = 'auto'
             } else {
-                header.style.height = `${headerHeight}px`
+                header.style.height = null
             }
         }
         const menuItems = document.querySelectorAll('#nav-bar li a[href*="#"]')
         for (let i = 0; i < menuItems.length; i++) {
             let menuItem = menuItems[i]
-            menuItem.onclick = () => {
-                header.style.height = `${headerHeight}px`
+
+            menuItem.onclick = function(event) {
+                let isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('sub-nav')
+                console.log(menuItem)
+                if(isParentMenu) {
+                    event.preventDefault()
+
+                } else {
+                    header.style.height = null
+                }
+
             }
         }
         
